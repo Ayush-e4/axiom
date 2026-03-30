@@ -4,8 +4,8 @@
 
 <p align="center">
   <a href="https://github.com/Ayush-e4/axiom/actions/workflows/test.yml"><img src="https://github.com/Ayush-e4/axiom/actions/workflows/test.yml/badge.svg" alt="Tests"></a>
-  <a href="https://pypi.org/project/axiom/"><img src="https://img.shields.io/pypi/v/axiom?style=flat-square&color=f7971e&label=pypi" alt="PyPI"></a>
-  <a href="https://pypi.org/project/axiom/"><img src="https://img.shields.io/pypi/pyversions/axiom?style=flat-square&color=a8edea" alt="Python"></a>
+  <a href="https://pypi.org/project/axiom-db/"><img src="https://img.shields.io/pypi/v/axiom-db?style=flat-square&color=f7971e&label=pypi" alt="PyPI"></a>
+  <a href="https://pypi.org/project/axiom-db/"><img src="https://img.shields.io/pypi/pyversions/axiom-db?style=flat-square&color=a8edea" alt="Python"></a>
   <a href="https://github.com/Ayush-e4/axiom/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Ayush-e4/axiom?style=flat-square&color=fed6e3" alt="License"></a>
   <a href="https://github.com/Ayush-e4/axiom"><img src="https://img.shields.io/github/stars/Ayush-e4/axiom?style=flat-square&color=f9e2af" alt="Stars"></a>
 </p>
@@ -88,7 +88,7 @@ The standard answer? Spin up **Redis** + **Celery**. That's 2 extra services, Do
 ## 🚀 Quick Start
 
 ```bash
-pip install axiom
+pip install axiom-db
 ```
 
 > **Requirements:** Python 3.10+ · No external dependencies — just the standard library.
