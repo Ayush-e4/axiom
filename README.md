@@ -176,16 +176,16 @@ def register(email: str):
 
 ```mermaid
 stateDiagram-v2
-    [*] --> pending : enqueue()
-    pending --> running : worker claims job
-    running --> done : ✅ success
-    running --> pending : ⚠️ retry (exponential backoff)
-    pending --> failed : ❌ max_attempts exceeded
-    failed --> pending : 🔁 manual retry()
-    
-    note right of done : Job completed successfully
-    note right of failed : Moved to Dead Letter Queue
+    [*] --> pending: enqueue
+    pending --> running: claim
+    running --> done: success
+    running --> pending: retry
+    pending --> failed: max attempts
+    failed --> pending: manual retry
 ```
+
+`done` = completed successfully  
+`failed` = moved to the dead-letter queue
 
 Inspect and retry dead-lettered jobs:
 
