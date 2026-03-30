@@ -3,8 +3,8 @@ import time
 
 import pytest
 
-from noredis import Queue, task
-from noredis.queue import register
+from axiomdb import Queue, task
+from axiomdb.queue import register
 
 DB = "test_queue.db"
 

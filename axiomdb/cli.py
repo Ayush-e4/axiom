@@ -133,10 +133,10 @@ def cmd_inspect(args):
 
 def main():
     parser = argparse.ArgumentParser(
-        prog="noredis",
-        description="NoRedis — SQLite-backed cache & job queue"
+        prog="axiomdb",
+        description="AxiomDB — SQLite-backed cache & job queue"
     )
-    parser.add_argument("--db", default="noredis.db", help="Path to SQLite db (default: noredis.db)")
+    parser.add_argument("--db", default="axiomdb.db", help="Path to SQLite db (default: axiomdb.db)")
     sub = parser.add_subparsers(dest="command", required=True)
 
     # stats

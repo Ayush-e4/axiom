@@ -1,20 +1,20 @@
 """
-NoRedis + FastAPI example
+AxiomDB + FastAPI example
 =======================
 
 A complete API server with cached responses and background email jobs.
 
 Run:
-    pip install fastapi uvicorn noredis
+    pip install fastapi uvicorn axiomdb
     uvicorn examples.fastapi_example:app --reload
 """
 
 from fastapi import FastAPI, HTTPException
-from noredis import Cache, Queue, task
+from axiomdb import Cache, Queue, task
 
-app = FastAPI(title="NoRedis FastAPI Demo")
+app = FastAPI(title="AxiomDB FastAPI Demo")
 
-# ── Initialize noredis (one file does it all) ─────────────────────
+# ── Initialize axiomdb (one file does it all) ─────────────────────
 cache = Cache("app.db")
 queue = Queue("app.db")
 queue.start_worker(concurrency=4)
